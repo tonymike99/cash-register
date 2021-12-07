@@ -7,6 +7,20 @@ btn.addEventListener('click', function () {
     console.log(billAmount1.value);
     console.log(cashGiven1.value);
 
+    if (billAmount == '' || cashGiven == '') {
+        console.log('Invalid Input');
+
+        document.querySelector('#NoOf2000').innerHTML = 0;
+        document.querySelector('#NoOf500').innerHTML = 0;
+        document.querySelector('#NoOf100').innerHTML = 0;
+        document.querySelector('#NoOf20').innerHTML = 0;
+        document.querySelector('#NoOf10').innerHTML = 0;
+        document.querySelector('#NoOf5').innerHTML = 0;
+        document.querySelector('#NoOf1').innerHTML = 0;
+
+        return;
+    }
+
     // let billAmount = 243;
     // let cashGiven = 2000;
 
