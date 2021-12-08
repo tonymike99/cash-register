@@ -7,7 +7,7 @@ btn.addEventListener('click', function () {
     console.log(billAmount1.value);
     console.log(cashGiven1.value);
 
-    if (billAmount == '' || cashGiven == '') {
+    if (billAmount1.value == '' || cashGiven1.value == '') {
         console.log('Invalid Input');
 
         document.querySelector('#NoOf2000').innerHTML = 0;
